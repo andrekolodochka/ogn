@@ -20,14 +20,16 @@ network={
     psk="<insert WiFi password here>"
     key_mgmt=WPA-PSK
     priority=2
-}```
+}
+```
 
 2. Install SD card in RPI, boot and SSH into it. If you don’t know the IP address - try using raspberrypi.local host name (or ping it to find the IP address)
 3. Configure RPI to email its IP address on boot (original instructions are on http://cagewebdev.com/raspberry-pi-sending-emails-on-boot/)
   a) Create startup_mailer.py file
   
   ```cd /home/pi
-wget https://raw.githubusercontent.com/andrekolodochka/ogn/main/startup_mailer.py```
+wget https://raw.githubusercontent.com/andrekolodochka/ogn/main/startup_mailer.py
+```
 
   b) Edit /etc/rc.local file and add a line to run the script on boot
   
@@ -36,7 +38,8 @@ wget https://raw.githubusercontent.com/andrekolodochka/ogn/main/startup_mailer.p
 if [ “$_IP” ]; then
   printf “My IP address is %s\n” “$_IP”
   python /home/pi/startup_mailer.py
-fi```
+fi
+```
 
 </details>
   
