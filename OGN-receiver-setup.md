@@ -25,3 +25,16 @@ network={
 3. Configure RPI to email its IP address on boot (original instructions are on http://cagewebdev.com/raspberry-pi-sending-emails-on-boot/)
   a) Create startup_mailer.py file
   
+  ```cd /home/pi
+wget https://raw.githubusercontent.com/andrekolodochka/ogn/main/startup_mailer.py```
+  b) Edit /etc/rc.local file and add a line to run the script on boot
+  
+  ```sudo vi /etc/rc.local
+
+if [ “$_IP” ]; then
+  printf “My IP address is %s\n” “$_IP”
+  python /home/pi/startup_mailer.py
+fi```
+
+</details>
+  
