@@ -101,15 +101,15 @@ wget https://raw.githubusercontent.com/andrekolodochka/ogn/main/YSRI.conf
   
   ```
   sudo wget -P /etc -O rtlsdr-ogn.conf https://raw.githubusercontent.com/andrekolodochka/ogn/main/rtlsdr-ogn.conf
-    ```
+  ```
   
-  </details>
+</details>
   
 <details>
   <summary>Plug in the dongle and start the service</summary>
   
   ```
   sudo service rtlsdr-ogn start 
-     ```
+  ```
   
-  </details> 
+</details> 
