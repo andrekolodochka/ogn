@@ -63,3 +63,16 @@ a) *1. System options → S4 Hostname*: set preferred hostname, such as YSRI-OGN
 
 b) *5. Localization options → L2 Timezone*: set to Australia/Sydney
 </details>
+
+<details>
+  <summary>Download rtl-dsr software and extract</summary>
+  
+```
+sudo mkdir /opt/rtldsr
+cd /opt/rtldsr
+sudo wget http://download.glidernet.org/arm/rtlsdr-ogn-bin-ARM-latest.tgz
+sudo tar -xzvf rtlsdr-ogn-bin-ARM-latest.tgz
+cd rtlsdr-ogn
+```
+</details>
+  
