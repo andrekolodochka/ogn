@@ -60,5 +60,6 @@ sudo raspi-config
 ```
 
 a) *1. System options → S4 Hostname*: set preferred hostname, such as YSRI-OGN-receiver
+
 b) *5. Localization options → L2 Timezone*: set to Australia/Sydney
 </details>
