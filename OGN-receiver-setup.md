@@ -76,3 +76,40 @@ cd rtlsdr-ogn
 ```
 </details>
   
+<details>
+  <summary>Follow instructions in INSTALL file</summary>
+  
+```
+source setup-rpi.sh
+source getEGM.sh
+source install-service.sh
+```
+</details>
+  
+<details>
+  <summary>Download configuration file for YSRI</summary>
+  
+  ```
+  cd /opt/rtlsdr/rtlsdr-ogn
+wget https://raw.githubusercontent.com/andrekolodochka/ogn/main/YSRI.conf
+  ```
+  
+  </details>
+  
+<details>
+  <summary>Download rtlsdr-ogn.conf file into /etc directory and overwrite the existing file</summary>
+  
+  ```
+  sudo wget -P /etc -O rtlsdr-ogn.conf https://raw.githubusercontent.com/andrekolodochka/ogn/main/rtlsdr-ogn.conf
+    ```
+  
+  </details>
+  
+<details>
+  <summary>Plug in the dongle and start the service</summary>
+  
+  ```
+  sudo service rtlsdr-ogn start 
+     ```
+  
+  </details> 
