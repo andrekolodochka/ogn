@@ -71,10 +71,7 @@ sudo apt-get install -y build-essential ntp ntpdate libjpeg-dev libconfig-dev ff
   <summary>3. Download rtl-dsr software and extract</summary>
   
 ```
-sudo mkdir /opt/rtldsr
-cd /opt/rtlsdr
-sudo wget http://download.glidernet.org/arm/rtlsdr-ogn-bin-ARM-latest.tgz
-sudo tar -xzvf rtlsdr-ogn-bin-ARM-latest.tgz
+sudo mkdir /opt/rtlsdr && cd /opt/rtlsdr && sudo wget http://download.glidernet.org/arm/rtlsdr-ogn-bin-ARM-latest.tgz && sudo tar -xzvf rtlsdr-ogn-bin-ARM-latest.tgz
 cd rtlsdr-ogn
 ```
 </details>
