@@ -48,7 +48,7 @@ fi
 
 </details>
 <details>
-  <summary>2. Install packages</summary>
+  <summary>2. Update existing and install new required packages</summary>
     
 ```
 sudo apt-get update
