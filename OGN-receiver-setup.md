@@ -101,7 +101,7 @@ source install-service.sh
   Again, this step is specific to my set up, the name and location of your configuration file rtl-sdr-ogn.conf refers to is likely to be different.
   
   ```
-  sudo wget -O /etc/rtlsdr-ogn.conf https://raw.githubusercontent.com/andrekolodochka/ogn/main/rtlsdr-ogn.conf
+  sudo wget -O /etc/rtldsr-ogn.conf https://raw.githubusercontent.com/andrekolodochka/ogn/main/rtlsdr-ogn.conf
   ```
   
 </details>
