@@ -128,4 +128,4 @@ source install-service.sh
   telnet localhost 50001
   ```
   2. Open http://<receiver IP address>:8081 and http://<receiver IP address>:8080
-  3. Go to [Glider RADAR](https://www.gliderradar.com/center/-33.59749,150.78493/zoom/15/time/15) and check wherher the receiver is shown.
+  3. Go to [Glider RADAR](https://www.gliderradar.com/center/-33.59749,150.78493/zoom/15/time/15) and check wherher the receiver is shown. Go to [Onglide Range](https://ognrange.glidernet.org/?#,max,all,-33.59206_150.81118,10,#000000ff:#000000ff,circles;) and check whether YSRI receiver is online.
