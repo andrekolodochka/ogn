@@ -62,7 +62,7 @@ b) *5. Localization options → L2 Timezone*: set to Australia/Sydney
     
 ```
 sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install build-essential ntp ntpdate libjpeg-dev libconfig-dev fftw3-dev procserv lynx telnet rtl-sdr make cmake aptitude libjpeg8
+sudo apt-get install -y build-essential ntp ntpdate libjpeg-dev libconfig-dev fftw3-dev procserv lynx telnet rtl-sdr make cmake aptitude libjpeg8
 ```
 
 </details>
