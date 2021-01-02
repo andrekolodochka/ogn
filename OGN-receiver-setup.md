@@ -95,8 +95,7 @@ source install-service.sh
   Obviously this step is specific to Richmond RAAF airbase, you'll need to figure out your airfield's settings
   
   ```
-  cd /opt/rtlsdr/rtlsdr-ogn
-wget https://raw.githubusercontent.com/andrekolodochka/ogn/main/YSRI.conf
+  wget -O /opt/rtldsr/rtlsdr-ogn/YSRI.conf https://raw.githubusercontent.com/andrekolodochka/ogn/main/YSRI.conf
   ```
   
   </details>
