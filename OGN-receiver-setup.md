@@ -119,3 +119,14 @@ wget https://raw.githubusercontent.com/andrekolodochka/ogn/main/YSRI.conf
   ```
   
 </details> 
+<details>
+  <summary>Test and monitor/summary>
+  
+  1. Should see fair bit of activity on port 50001 (may need to wait a few mins after the start)
+  
+  ```
+  telnet localhost 50000
+  telnet localhost 50001
+  ```
+  2. Open http://<receiver IP address>:8081 and http://<receiver IP address>:8080
+  3. Go to [Glider RADAR](https://www.gliderradar.com/center/-33.59749,150.78493/zoom/15/time/15) and check wherher the receiver is shown.
