@@ -1,7 +1,12 @@
+These instructions are geared for headless installation (that's without a need for keyboard and monitor connected to Raspberry Pi). Well, at least for the most part, you still have to connect to RPI to configure WiFi and enable SSH. I created a custom RPI image which has those already pre-configured for my home wifi so I can skip the step #1 below.
+
 Set up SD card with [Raspberry Pi OS Lite image](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit).
+  
+
 <details>
-  <summary>Configure WiFi and SSH</summary>
-  1. Use instructions on [How to configure RPI for headless set up with WiFi and SSH](https://styxit.com/2017/03/14/headless-raspberry-setup.html) to configure WiFi and SSH before using SD card in Raspberry Pi. Use the following as the content of wpa_supplicat.conf file:
+  <summary>1. Configure WiFi and SSH</summary>
+  Skipt this step if using pre-confgured RPI image 
+  01. Use instructions on [How to configure RPI for headless set up with WiFi and SSH](https://styxit.com/2017/03/14/headless-raspberry-setup.html) to configure WiFi and SSH before using SD card in Raspberry Pi. Use the following as the content of wpa_supplicat.conf file:
   
   ```ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -43,7 +48,7 @@ fi
 
 </details>
 <details>
-  <summary>Install packages</summary>
+  <summary>2. Install packages</summary>
     
 ```
 sudo apt-get update
@@ -53,7 +58,7 @@ sudo apt-get install build-essential ntp ntpdate libjpeg-dev libconfig-dev fftw3
 
 </details>
 <details>
-  <summary>Set Raspberry Pi settings through *raspi-config*</summary>
+  <summary>3. Set Raspberry Pi settings through *raspi-config*</summary>
   
 ```
 sudo raspi-config
@@ -65,7 +70,7 @@ b) *5. Localization options → L2 Timezone*: set to Australia/Sydney
 </details>
 
 <details>
-  <summary>Download rtl-dsr software and extract</summary>
+  <summary>4. Download rtl-dsr software and extract</summary>
   
 ```
 sudo mkdir /opt/rtldsr
@@ -77,7 +82,7 @@ cd rtlsdr-ogn
 </details>
   
 <details>
-  <summary>Follow instructions in INSTALL file</summary>
+  <summary>5. Follow instructions in INSTALL file</summary>
   
 ```
 source setup-rpi.sh
@@ -87,7 +92,8 @@ source install-service.sh
 </details>
   
 <details>
-  <summary>Download configuration file for YSRI</summary>
+  <summary>6. Download configuration file for YSRI</summary>
+  Obviously this step is specific to Richmond RAAF airbase, you'll need to figure out your airfield's settings
   
   ```
   cd /opt/rtlsdr/rtlsdr-ogn
@@ -97,7 +103,8 @@ wget https://raw.githubusercontent.com/andrekolodochka/ogn/main/YSRI.conf
   </details>
   
 <details>
-  <summary>Download rtlsdr-ogn.conf file into /etc directory and overwrite the existing file</summary>
+  <summary>7. Download rtlsdr-ogn.conf file into /etc directory and overwrite the existing file</summary>
+  Again, this step is specific to my set up, the name and location of your configuration file rtl-sdr-ogn.conf refers to is likely to be different.
   
   ```
   sudo wget -P /etc -O rtlsdr-ogn.conf https://raw.githubusercontent.com/andrekolodochka/ogn/main/rtlsdr-ogn.conf
@@ -106,7 +113,7 @@ wget https://raw.githubusercontent.com/andrekolodochka/ogn/main/YSRI.conf
 </details>
   
 <details>
-  <summary>Plug in the dongle and start the service</summary>
+  <summary>8. Plug in the dongle and start the service</summary>
   
   ```
   sudo service rtlsdr-ogn start 
