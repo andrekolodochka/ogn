@@ -4,7 +4,7 @@ Set up SD card with [Raspberry Pi OS Lite image](https://www.raspberrypi.org/sof
   
 
 <details>
-  <summary>1. Configure WiFi and SSH</summary>
+  <summary>1. Configure WiFi, SSH, timezone, hostname</summary>
   Skip this step if using pre-confgured RPI image 
   
   1. Use instructions on [How to configure RPI for headless set up with WiFi and SSH](https://styxit.com/2017/03/14/headless-raspberry-setup.html) to configure WiFi and SSH before using SD card in Raspberry Pi. Use the following as the content of wpa_supplicat.conf file:
