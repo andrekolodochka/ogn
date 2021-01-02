@@ -1,4 +1,4 @@
-These instructions are geared for headless installation (that's without a need for keyboard and monitor connected to Raspberry Pi). Well, at least for the most part, you still have to connect to RPI to configure WiFi and enable SSH. I created a custom RPI image which has those already pre-configured for my home wifi so I can skip the step #1 below.
+These instructions are for headless installation (that's without a need for keyboard and monitor connected to Raspberry Pi). Well, at least for the most part, you still have to connect to RPI to configure WiFi and enable SSH. I created a custom RPI image which has those already pre-configured for my home wifi so I can skip the step #1 below.
 
 Set up SD card with [Raspberry Pi OS Lite image](https://www.raspberrypi.org/software/operating-systems/#raspberry-pi-os-32-bit).
   
