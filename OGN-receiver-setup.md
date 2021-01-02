@@ -5,7 +5,7 @@ Set up SD card with [Raspberry Pi OS Lite image](https://www.raspberrypi.org/sof
 
 <details>
   <summary>1. Configure WiFi and SSH</summary>
-  Skipt this step if using pre-confgured RPI image 
+  Skip this step if using pre-confgured RPI image 
   
   01. Use instructions on [How to configure RPI for headless set up with WiFi and SSH](https://styxit.com/2017/03/14/headless-raspberry-setup.html) to configure WiFi and SSH before using SD card in Raspberry Pi. Use the following as the content of wpa_supplicat.conf file:
   
@@ -60,6 +60,7 @@ sudo apt-get install build-essential ntp ntpdate libjpeg-dev libconfig-dev fftw3
 </details>
 <details>
   <summary>3. Set Raspberry Pi settings through *raspi-config*</summary>
+  Skip this step if using pre-confgured RPI image 
   
 ```
 sudo raspi-config
